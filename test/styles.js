@@ -58,6 +58,12 @@ test("doesn't throw when using at-rules", t => {
       0% { opacity: 0 }
       100% { opacity: 1}
     }
+    `,
+    `div { color: red; }
+     /* CSS Comment */
+     @media screen and (min-width: 480px) {
+       div { color: red; }
+     }
     `
   ]
 
